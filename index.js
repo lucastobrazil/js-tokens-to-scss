@@ -1,5 +1,7 @@
 // include node fs module
 var fs = require('fs');
+var tokens = require('@adapt-design-system/tokens');
+console.log(tokens);
 
 var colors = {
     primary: '#cc0000',
