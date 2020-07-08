@@ -1,16 +1,17 @@
 {
     "name": "ads-scss-tokens-node",
-    "version": "1.0.0",
+    "version": "0.0.3",
     "description": "",
-    "main": "index.js",
+    "main": "tokens.scss",
     "scripts": {
         "build": "node ./src/index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Lucas Arundell <lucas.arundell@gmail.com>",
     "license": "ISC",
-    "dependencies": {
+    "devDependencies": {
         "@adapt-design-system/tokens": "^0.1.1",
-        "@babel/runtime": "^7.10.3"
+        "@babel/runtime": "^7.10.3",
+        "lodash": "^4.17.15"
     }
 }
