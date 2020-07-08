@@ -6,24 +6,50 @@
 */
 
 // Main Color Swatches
-$primary: #CC0000;
-$accent: #0484E7;
-$black: #000000;
-$white: #FFFFFF;
-$text: #484848;
-$background: #FFFFFF;
-$backgroundSurface: #FAFAFA;
-$muted: #DDDDDD;
-$subduedText: #666666;
-$success: #21A663;
-$warning: #F59B00;
-$error: #D63333;
-$focus: #0484E7;
+$ads-primary: #CC0000;
+$ads-accent: #0484E7;
+$ads-black: #000000;
+$ads-white: #FFFFFF;
+$ads-text: #484848;
+$ads-background: #FFFFFF;
+$ads-backgroundSurface: #FAFAFA;
+$ads-muted: #DDDDDD;
+$ads-subduedText: #666666;
+$ads-success: #21A663;
+$ads-warning: #F59B00;
+$ads-error: #D63333;
+$ads-focus: #0484E7;
 // dark mode swatches
-$dark-mode-text: #FFFFFF;
-$dark-mode-background: #2E2E2E;
-$dark-mode-backgroundSurface: #1E1E1E;
-$dark-mode-primary: #E50627;
-$dark-mode-muted: #4D4C4C;
-$dark-mode-subduedText: #969696;
-$dark-mode-accent: #36A6FC;
+$ads-dark-mode-text: #FFFFFF;
+$ads-dark-mode-background: #2E2E2E;
+$ads-dark-mode-backgroundSurface: #1E1E1E;
+$ads-dark-mode-primary: #E50627;
+$ads-dark-mode-muted: #4D4C4C;
+$ads-dark-mode-subduedText: #969696;
+$ads-dark-mode-accent: #36A6FC;
+
+/*
+    Mendix Var Names.
+    These should be set up in the mendix project.
+*/
+$ads-brand-accent: $ads-accent;
+$ads-link-color: $ads-accent;
+$ads-bg-color: $ads-background;
+$ads-sidebar-bg: $ads-background;
+$ads-bg-color-secondary: $ads-backgroundSurface;
+$ads-brand-error: $ads-error;
+$ads-brand-default: $ads-muted;
+$ads-default-border-color: $ads-muted;
+$ads-gray-primary: $ads-muted;
+$ads-brand-primary: $ads-primary;
+$ads-font-color-detail: $ads-subduedText;
+$ads-brand-success: $ads-success;
+$ads-font-base-color: $ads-text;
+$ads-font-color-headers: $ads-text;
+$ads-brand-warning: $ads-warning;
+$ads-form-input-border-focus-color: $ads-focus;
+$ads-form-input-bg-hover: $ads-accent;
+$ads-btn-inverse-bg: $ads-muted;
+$ads-btn-default-bg: $ads-muted;
+$ads-btn-default-color: $ads-text;
+$ads-brand-inverse: $ads-black;
