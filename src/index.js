@@ -1,6 +1,6 @@
 var fs = require('fs');
 var tokens = require('@adapt-design-system/tokens');
-var convertToScssVars = require('./transformers.js');
+var convertToScssVars = require('./transformers/colors.js');
 
 var sassVars = convertToScssVars(tokens.ThemeColors);
 
