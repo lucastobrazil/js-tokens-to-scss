@@ -1,11 +1,9 @@
 var cloneDeep = require('lodash/cloneDeep');
 var PREFIX = 'ads-';
-var dictionary = require('./dictionary.js');
 
 /*
-    First, we generate a JS object with a simpler sturcture:
-    swatchName: `#${hex}`;
-    primary: '#cc0000';
+    Generate a JS object with a simpler structure than the tokens package:
+    swatchName: `#${hex}` => primary: '#cc0000'
 
     This way, any other mapping we need to do can simply 
     take `key: value` without needing to pull out 
@@ -43,28 +41,6 @@ function makeScssName(swatch) {
     return `$${PREFIX}${swatch}`;
 }
 
-/*
-    Reads over the dictionary mapping of Mendix vars to
-    ADS themeColor token names, then returns a string
-    in the format:
-    
-    $ads-mendix-var-name: $ads-theme-color-name;
-    
-    For example:
-    $ads-brand-primary: $ads-primary;
-*/
-function generateMendixVars() {
-    var str = `\n/*
-    Mendix Var Names.
-    These should be set up in the mendix project.
-*/\n`;
-    Object.keys(dictionary).map((mendixVar) => {
-        var mappedName = dictionary[mendixVar];
-
-        str += makeScssVar(mendixVar, makeScssName(mappedName));
-    });
-    return str;
-}
 
 /*
     Iterates over the tokens and turns them into 
@@ -89,9 +65,6 @@ function convertToScssVars(themeColors) {
               })
             : (outputString += `${makeScssVar(swatchName, colors[swatchName])}`);
     });
-    
-    // Generate vars that map mendix var to ADS token var
-    outputString += generateMendixVars();
     
     // Now add newlines after each SCSS var
     outputString = outputString.split(';').join(';\n');

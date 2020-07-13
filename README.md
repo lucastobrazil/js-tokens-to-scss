@@ -5,13 +5,10 @@ This package is a POC of converting JS-based Design Tokens into a SCSS file that
 
 # Todo
 
-1. Need to look at namespacing vars:
+1. Dictionary 
+- Extract concept out of this repo; this should just be focused on converting tokens to scss ones.
 
-eg. $primary is too vague in a SCSS context; probably need $ads-primary
-
-2. Dictionary - figure out a good workflow
-
-3. Other tokens
+2. Other tokens
 - [ ] Colors
 - [ ] Fonts
 - [ ] FontSizes
