@@ -1,5 +1,7 @@
+var tokens = require('@adapt-design-system/tokens');
 var cloneDeep = require('lodash/cloneDeep');
-var PREFIX = 'ads-';
+var makeScssVar = require('../util/scss');
+
 
 /*
     Generate a JS object with a simpler structure than the tokens package:
@@ -25,30 +27,17 @@ function generateJsObject(themeColors) {
     return obj;
 }
 
-/*
-    Takes swatch name and value, turns into:
-    name: value
-*/
-function makeScssVar(name, value) {
-    var name = makeScssName(name);
-    return `${name}: ${value};`;
-}
 
-/*
-    Takes swatch name and turns it into: $ads-foo
-*/
-function makeScssName(swatch) {
-    return `$${PREFIX}${swatch}`;
-}
 
 
 /*
     Iterates over the tokens and turns them into 
     a string containing all SCSS vars.
 */
-function convertToScssVars(themeColors) {
+function convertColors() {
+    var themeColors = tokens.ThemeColors;
     var colors = generateJsObject(themeColors);
-    var outputString = `// Main Color Swatches\n`;
+    var outputString = `\n// Main Color Swatches\n`;
 
     // Generate basic $ads-var: #hex for all themeColors
     Object.keys(colors).map((swatchName) => {
@@ -71,4 +60,4 @@ function convertToScssVars(themeColors) {
     return outputString;
 }
 
-module.exports = convertToScssVars;
+module.exports = convertColors;
