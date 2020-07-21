@@ -9,10 +9,10 @@ This package is a POC of converting JS-based Design Tokens into a SCSS file that
 - Extract concept out of this repo; this should just be focused on converting tokens to scss ones.
 
 2. Other tokens
-- [ ] Colors
+- [x] Colors
 - [ ] Fonts
-- [ ] FontSizes
+- [x] FontSizes
 - [ ] FontWeights
 - [ ] LetterSpacings
 - [ ] Radii
-- [ ] SpaceScale
+- [x] SpaceScale
