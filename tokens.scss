@@ -29,6 +29,78 @@ $ads-dark-mode-muted: #4D4C4C;
 $ads-dark-mode-subduedText: #969696;
 $ads-dark-mode-accent: #36A6FC;
 
+// Extended Palette
+$ads-extended-reds-R900: #8A0F0F;
+$ads-extended-reds-R700: #CC0000;
+$ads-extended-reds-R500: #D63333;
+$ads-extended-reds-R250: #E16666;
+$ads-extended-reds-R100: #EB9999;
+$ads-extended-reds-R080: #F5CDCC;
+$ads-extended-reds-R020: #FCE3E3;
+$ads-extended-yellows-Y900: #CA6602;
+$ads-extended-yellows-Y700: #F59B00;
+$ads-extended-yellows-Y500: #FFCD00;
+$ads-extended-yellows-Y250: #FFDB48;
+$ads-extended-yellows-Y100: #FFE785;
+$ads-extended-yellows-Y080: #FEEC9A;
+$ads-extended-yellows-Y020: #FEF9DC;
+$ads-extended-greens-G900: #0C5F35;
+$ads-extended-greens-G700: #1E995B;
+$ads-extended-greens-G500: #21A663;
+$ads-extended-greens-G250: #4FC489;
+$ads-extended-greens-G100: #7EC8A3;
+$ads-extended-greens-G080: #C9EEDB;
+$ads-extended-greens-G020: #EBF9F2;
+$ads-extended-cyans-C900: #008DA6;
+$ads-extended-cyans-C700: #00A3BF;
+$ads-extended-cyans-C500: #00B8D9;
+$ads-extended-cyans-C250: #00C7E6;
+$ads-extended-cyans-C100: #79E2F2;
+$ads-extended-cyans-C080: #B3F5FF;
+$ads-extended-cyans-C020: #E6FCFF;
+$ads-extended-blues-B900: #023F6E;
+$ads-extended-blues-B700: #0361AA;
+$ads-extended-blues-B500: #0484E7;
+$ads-extended-blues-B250: #229DFB;
+$ads-extended-blues-B100: #78C3FD;
+$ads-extended-blues-B080: #CDE9FE;
+$ads-extended-blues-B020: #ECF6FD;
+$ads-extended-bluegrays-B900: #2E3F4C;
+$ads-extended-bluegrays-B700: #2F5574;
+$ads-extended-bluegrays-B500: #506D85;
+$ads-extended-bluegrays-B250: #738A9D;
+$ads-extended-bluegrays-B100: #96A7B6;
+$ads-extended-bluegrays-B080: #B9C5CE;
+$ads-extended-bluegrays-B020: #DCE2E8;
+$ads-extended-neutrals-N900: #000000;
+$ads-extended-neutrals-N700: #484848;
+$ads-extended-neutrals-N500: #666666;
+$ads-extended-neutrals-N250: #999999;
+$ads-extended-neutrals-N100: #DDDDDD;
+$ads-extended-neutrals-N020: #FAFAFA;
+$ads-extended-neutrals-N000: #FFFFFF;
+$ads-extended-violets-V900: #403294;
+$ads-extended-violets-V700: #5243AA;
+$ads-extended-violets-V500: #6554C0;
+$ads-extended-violets-V250: #8777D9;
+$ads-extended-violets-V100: #998DD9;
+$ads-extended-violets-V080: #C0B6F2;
+$ads-extended-violets-V020: #EAE6FF;
+$ads-extended-purples-P900: #550736;
+$ads-extended-purples-P700: #710948;
+$ads-extended-purples-P500: #890C58;
+$ads-extended-purples-P250: #A13D79;
+$ads-extended-purples-P100: #B86C9B;
+$ads-extended-purples-P080: #D19FBD;
+$ads-extended-purples-P020: #E7CEDE;
+$ads-extended-pinks-P900: #6E022A;
+$ads-extended-pinks-P700: #CE034E;
+$ads-extended-pinks-P500: #F2075E;
+$ads-extended-pinks-P250: #FD2B78;
+$ads-extended-pinks-P100: #FD78A9;
+$ads-extended-pinks-P080: #FECDDF;
+$ads-extended-pinks-P020: #FDECF2;
+
 // Font Sizes
 $ads-font-size-uber: 111px;
 $ads-font-size-hero: 77px;
@@ -59,3 +131,9 @@ $ads-line-height-tiny: 1.38;
 
 // Space Scale
 $ads-spacing: 8px;
+
+// Border Radii
+$ads-border-radius-none: 0px;
+$ads-border-radius-small: 4px;
+$ads-border-radius-medium: 10px;
+$ads-border-radius-large: 100px;
